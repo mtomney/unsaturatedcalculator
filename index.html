@@ -10,7 +10,7 @@
 	<body>
 		<div class="container">
 			<div class="jumbotron">
-				<h1>Unsaturated Calculator</h1>
+				<h1>Degrees of Unsaturation Calculator</h1>
 				<hr>
 				<h2 class="text-center">Find your degrees of unsaturation below!</h2>
 			</div>
@@ -21,13 +21,13 @@
 		<br>
 		<div class="container">
 			<form>
-			<p class="text-center" id="molform"> C <input type="text" name="carbon" size="2" /> H <input type="text" name="hydrogen" size="2" /> O <input type="text" name="oxygen" size="2" /> N <input type="text" name="nitrogen" size="2" /> X <input type="text" name="carbon" size="2" /> </p>
+			<p class="text-center" id="molform"> C <input id="carbon" type="text" pattern="[0-9.]+" name="carbon" size="2" /> H <input id="hydrogen" type="text" pattern="[0-9.]+" name="hydrogen" size="2" /> O <input id="oxygen" type="text" pattern="[0-9.]+" name="oxygen" size="2" /> N <input id="nitrogen" type="text" pattern="[0-9.]+" name="nitrogen" size="2" /> X <input id="halogen" type="text" pattern="[0-9.]+" name="halogen" size="2" /></p>
 			<hr>
-			<p class="text-center"> <button id="calculate" class="btn btn-lg btn-warning" type="submit">Calculate Unsaturation</button></p>
+			<p class="text-center"><button id="calculate" class="btn btn-lg btn-warning" type="submit" onclick="calcUnsat()">Calculate Unsaturation</button></p>
 			</form>
 		</div>
 
-
+		<script src="js/app.js"></script>
 		<script src="bootstrap/jquery-1.12.3.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 	</body>
